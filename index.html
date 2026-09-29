@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Is Web Dev?</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: rgb(15, 15, 15);
+      }
+
+      .nav {
+        border-bottom: 2px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px 150px;
+      }
+
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        transition:
+          box-shadow 0.3s ease,
+          transform 0.3s ease;
+        border-radius: 10px;
+        font-weight: bold;
+        border: 2px solid gray;
+        padding: 10px 20px;
+      }
+
+      .nav-link:hover {
+        transform: translateX(-2.5px) translateY(-2.5px);
+      }
+
+      .html {
+        background-color: #7b2813;
+      }
+
+      .html:hover {
+        box-shadow: 5px 5px 0px #e34c26;
+      }
+
+      .css {
+        background-color: #401f61;
+      }
+
+      .css:hover {
+        box-shadow: 5px 5px 0px #663399;
+      }
+
+      .js {
+        background-color: #c98300;
+      }
+
+      .js:hover {
+        box-shadow: 5px 5px 0px #fdb91a;
+      }
+
+      .nav-link:active {
+        transform: none;
+        box-shadow: none;
+      }
+
+      .nav-home {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 23px;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        padding-block: 50px;
+        gap: 30px;
+        align-items: center;
+        color: #dddddd;
+        width: 40%;
+        line-height: 25px;
+        margin-inline: auto;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+      }
+
+      .section {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        color: #dddddd;
+        width: 60%;
+        margin-inline: auto;
+      }
+
+      .section img {
+        width: 150px;
+        transition: transform 0.3s ease;
+      }
+
+      .section:hover img {
+        transform: scale(1.1) translateY(-10px);
+      }
+
+      .section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .section p {
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#html" class="nav-link html">HTML</a>
+      <a href="#css" class="nav-link css">CSS</a>
+      <a href="#js" class="nav-link js">JavaScript</a>
+    </nav>
+    <div class="hero">
+      <h1>What Is Web Dev?</h1>
+      <p>
+        Web dev is the creative process of
+        <b
+          ><i><u>building</u></i></b
+        >
+        real websites, web apps, or games with technologies like HTML, CSS, and
+        JavaScript.
+      </p>
+    </div>
+    <div class="sections">
+      <div id="html" class="section">
+        <img src="/images/html.webp" />
+        <div>
+          <h2 style="color: #e34c26">HTML</h2>
+          <p>
+            HTML, or Hypertext Markup Language, is, as its name suggests, a text
+            markup language that defines the structure and content of a webpage
+            using tags like &lt;h1&gt; and &lt;div&gt;.
+          </p>
+        </div>
+      </div>
+      <div id="css" class="section">
+        <div>
+          <h2 style="color: #663399">CSS</h2>
+          <p>
+            CSS, or Cascading Style Sheets, is a stylesheet language that's
+            responsible for defining the styling and appearance of elements by
+            setting properties such as color, size, and background.
+          </p>
+        </div>
+        <img src="/images/css.svg" />
+      </div>
+      <div id="js" class="section">
+        <img src="/images/js.png" />
+        <div>
+          <h2 style="color: #fdb91a">JavaScript</h2>
+          <p>
+            JavaScript (not Java!) is a programming language used to add
+            functionality and interactivity to websites by detecting events,
+            processing logic, and doing a lot of really cool stuff (that we'll
+            cover in future workshops!).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero" style="margin-block: 50px; gap: 50px">
+      <i><h1>What will YOU build for the boba drop workshop?</h1></i>
+      <div>
+        Hosted by
+        <a href="https://tjdev.club" target="_blank" style="color: white"
+          >Dev Club</a
+        >, TJHSST's <i>premier</i> web development club
+      </div>
+    </div>
+  </body>
+</html>
